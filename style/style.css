@@ -13,7 +13,8 @@ body {
 
 .logo {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .logo img {
@@ -22,12 +23,11 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    justify-content:center ;
     min-height: 40px;
-    background-image:linear-gradient(black,grey);
     padding: 20px;
+    background-image: linear-gradient(black, rgb(29, 28, 28));
     position: sticky;
     top: 0px;
 }
@@ -52,11 +52,13 @@ a {
     color: rgb(255, 255, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 22px;
+    text-align: center;
 }
 
 nav ul li {
     margin: 7px;
     display: inline-block;
+    
 }
 
 h1 {
@@ -65,15 +67,11 @@ h1 {
     margin-top: 4px;
     text-align: center;
     color: rgb(0, 0, 0);
+    background-color: white;
+    margin-left:500px ;
+    margin-right: 500px;
     font-family: 'Bebas Neue', cursive;
-}
-
-p {
-
-    font-family: 'Noto Serif', serif;
-    text-align: center;
-    padding: 8px;
-}
+ }
 
 h2 {
     padding: 10px;
@@ -86,23 +84,26 @@ h2 {
 div,
 iframe {
     padding: 0 auto;
-    width: 600px;
-    height: 300px;
     margin: 0 auto;
 }
 
-@media (max-width:320px){
-    div,iframe{
+@media (max-width:320px) {
+
+    div,
+    iframe {
         width: 200px;
         height: 100px;
     }
+
     header {
         flex-direction: column;
     }
 }
 
-@media (max-width:597px){
-    div,iframe{
+@media (max-width:597px) {
+
+    div,
+    iframe {
         width: 300px;
         height: 200px;
     }
@@ -121,10 +122,17 @@ iframe {
 
 .imagen-anuncio {
     display: grid;
+    justify-content: center;
     height: 100px;
     width: 200px;
     margin: 0 auto;
+}
 
+@media (max-width:500px){
+    .imagen-anuncio{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 h3 {
@@ -134,48 +142,43 @@ h3 {
     text-align: center;
 }
 
-article {
-
-    background-color: rgb(255, 255, 255);
-    border: solid black 3px;
-    padding: 15px;
-    margin: 35px 10px 35px 10px;
-
-}
-
 .flex-conteiner {
-    background-color: black;
+    background-image: url(../img/madera.jpg);
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    
+    
 }
 
-@media (max-width:700px) {}
+.card{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 .precio {
     color: rgb(72, 72, 184);
     text-decoration: underline;
 }
 
-.vertodos{
+.vertodos {
     color: rgb(0, 0, 0);
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     text-align: center;
+    margin-top: 10px;
 
 }
 
-.vertodos:hover{
-    transform: scale(3);
-}
 
-.vertodos a {
-    color: black;
-    text-decoration: underline;
-}
+
+
 
 footer {
-    grid-area: footer;
     color: white;
     background-color: black;
     padding: 20px;
@@ -187,5 +190,60 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
 
+header{
+    grid-area: header;
+}
+.contenido{
+    grid-area: contenido;
+}
+.video{
+    grid-area: video;
+}
+.destinos{
+    grid-area: destinos;
+}
+.articulos{
+    grid-area: articulos;
+}
+.vertodos{
+    grid-area: ver todos;
+}
+footer{
+    grid-area: footer;
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "video"
+    "destinos"
+    "card"
+    "vertodos"
+    "footer";
+    grid-template-rows:1fr  ;
+
+}
+
+.card-img-top{
+    width: 410px;
+    height: 300px;
+    
+}
+
+h5{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.card-img-top2{
+    height: 300px;
+    width: 660px;
 }
