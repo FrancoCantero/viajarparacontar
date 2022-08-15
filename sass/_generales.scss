@@ -1,0 +1,23 @@
+
+body {
+    background-image: url(../img/fondoPagina.jpg);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.frase {
+    border: 0px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Play', sans-serif;
+     }
+
+ div , iframe{
+        margin: auto;
+     }

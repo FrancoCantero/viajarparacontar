@@ -1,0 +1,99 @@
+.imagen-anuncio {
+    display: grid;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media (max-width:500px){
+    .imagen-anuncio{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    padding: 0px;
+    text-align: center;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    
+    
+}
+
+.card{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(min-width:768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+.precio {
+    color: rgb(72, 72, 184);
+    text-decoration: underline;
+}
+
+
+.card-img-top{
+    width: 410px;
+    height: 300px;
+    
+}
+
+h5{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.card-img-top2{
+    height: 300px;
+    width: 660px;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.vertodos {
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+.flex-conteiner2 {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

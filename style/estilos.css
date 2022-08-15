@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=PT+Serif&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+body {
+  background-image: url(../img/fondoPagina.jpg);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.frase {
+  border: 0px;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Play", sans-serif;
+}
+
+div, iframe {
+  margin: auto;
+}
+
+/*header*/
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 1px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.conteiner {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  margin-top: 20px;
+}
+
+.logo h1 {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.menu {
+  float: right;
+  margin-top: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: normal;
+  font-size: 14px;
+  transition: all 500ms ease;
+  border-bottom: 4px solid transparent;
+  align-items: center;
+}
+
+.menu a:hover {
+  color: #40de32;
+  border-bottom: 4px solid transparent;
+}
+
+.imagen-anuncio {
+  display: grid;
+  justify-content: center;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .imagen-anuncio {
+    height: 100%;
+    width: 100%;
+  }
+}
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  padding: 0px;
+  text-align: center;
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.precio {
+  color: rgb(72, 72, 184);
+  text-decoration: underline;
+}
+
+.card-img-top {
+  width: 410px;
+  height: 300px;
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.card-img-top2 {
+  height: 300px;
+  width: 660px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.vertodos {
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.flex-conteiner2 {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+header {
+  grid-area: header;
+}
+
+.video {
+  grid-area: video;
+}
+
+.destinos {
+  grid-area: destinos;
+}
+
+.articulos {
+  grid-area: articulos;
+}
+
+.vertodos {
+  grid-area: ver todos;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header" "contenido" "video" "destinos" "card" "vertodos" "footer";
+  grid-template-rows: 1fr;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  margin-top: 150px;
+  text-align: center;
+}/*# sourceMappingURL=estilos.css.map */
