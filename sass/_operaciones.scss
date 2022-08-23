@@ -1,0 +1,43 @@
+$dimension:200px;
+
+@each $anuncio in anuncio1 , anuncio2, anuncio3 {
+    .#{$anuncio}
+    {
+        width: $dimension*3;
+        height: $dimension;
+      
+
+
+    }
+    
+}
+
+$redes: (
+    instagram : rgb(141, 24, 141),
+    facebook : #3a5795
+);
+
+@each $red , $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+
+.estilo{
+    padding: 10px;
+}
+
+.btn--instagram , .btn--facebook{
+    @extend .estilo
+}
+
+@mixin medidas($width,$height){
+    height: $height;
+    width: $width;
+    
+}
+
+.anuncio{
+    @include medidas (400px , 200px)
+}
