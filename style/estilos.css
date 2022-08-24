@@ -7,6 +7,7 @@ body {
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 img {
@@ -27,63 +28,109 @@ div, iframe {
 }
 
 /*header*/
-.header {
+nav {
+  background-color: rgb(0, 0, 0);
+  height: 80px;
   width: 100%;
-  height: 75px;
-  background-color: black;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  padding: 1px;
 }
 
-@media (min-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.conteiner {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
 }
 
 .logo {
-  float: left;
-  margin-top: 20px;
+  width: 40px;
+  height: 40px;
 }
 
-.logo h1 {
-  color: #FFF;
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.menu {
+nav ul {
   float: right;
-  margin-top: 20px;
+  margin-right: 20px;
 }
 
-.menu a {
-  color: #fff;
-  text-decoration: none;
+nav ul li {
   display: inline-block;
-  padding: 10px 15px;
-  line-height: normal;
-  font-size: 14px;
-  transition: all 500ms ease;
-  border-bottom: 4px solid transparent;
-  align-items: center;
+  line-height: 80px;
+  margin: 0px 5px;
 }
 
-.menu a:hover {
-  color: #40de32;
-  border-bottom: 4px solid transparent;
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
 }
 
+li a.active,
+li a:hover {
+  background-color: rgb(31, 108, 159);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: pink;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover,
+li a.active {
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul {
+    left: 0px;
+  }
+}
 @media (max-width: 500px) {
   .imagen-anuncio {
     height: 100%;
@@ -110,8 +157,8 @@ h3 {
   margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  .card {
+@media (max-width: 868px) {
+  div, .card {
     display: flex;
     flex-direction: column;
   }
