@@ -1,74 +1,26 @@
-
-
-@media (max-width:500px){
-    .imagen-anuncio{
-        height: 100%;
-        width: 100%;
-    }
-}
-
-h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    padding: 0px;
-    text-align: center;
-}
-
-.flex-conteiner {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 20px;
-    
-    
-}
-
-.card{
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-@media(max-width:868px){
-    div , .card{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-
-
-.precio {
-    color: rgb(72, 72, 184);
-    text-decoration: underline;
-}
-
-
-.card-img-top{
-    width: 410px;
-    height: 300px;
-    
-}
-
-h5{
-    text-align: center;
-}
-
-p{
-    text-align: center;
-}
-
-
-.col{
-    padding: 0;margin: 0;
-}
-
-.card-img-top2{
-    height: 300px;
+#galeria img {
     width: 100%;
+    height: 250px;
 }
 
+
+.col-lg-4,
+col-md-6,
+cl-sm-12 {
+    background-color: #f7f7f7;
+    background-image: url(../img/maderaclara.png);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#galeria img:hover {
+    transition: .1s;
+    border: 5px solid #f7f7f7;
+}
 
 
 

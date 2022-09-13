@@ -1,6 +1,7 @@
 
 body {
     background-image: url(../img/fondoPagina.jpg);
+    position: relative;
 }
 
 * {
@@ -13,6 +14,7 @@ body {
 h2{
     text-align: center;
     color: #fff;
+    margin-bottom: 40px,
 }
 
 
@@ -33,3 +35,16 @@ img{
  div , iframe{
         margin: auto;
      }
+
+
+
+.container{
+    height: 150vh;
+}
+
+@media only screen and(max-width:768px){
+    .container{
+        height: 400vh;
+    }
+    
+}
