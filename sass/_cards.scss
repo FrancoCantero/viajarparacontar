@@ -8,7 +8,7 @@ body {
     background-color: #151320;
     height: 100vh;
     display: grid;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -63,6 +63,24 @@ img {
     background-image: linear-gradient(135deg,
             #ffab1d,
             #f8501c);
+}
+
+.card4>.container:after {
+    background-image: linear-gradient(135deg,
+            #746a5a,
+            #209a2d);
+}
+
+.card5>.container:after {
+    background-image: linear-gradient(135deg,
+            #c32997,
+            #beb64a);
+}
+
+.card6>.container:after {
+    background-image: linear-gradient(135deg,
+            #587be4,
+            #5e2e20);
 }
 
 .details {

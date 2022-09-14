@@ -1,27 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=PT+Serif&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
-body {
-  background-color: #151320;
-  display: grid;
-  height: 100vh;
-  font-family: "Poppins" sans-serif;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 h2 {
   text-align: center;
   color: #fff;
-  margin-bottom: 40px;
+  margin-top: 25px;
 }
 
 h1 {
   text-align: center;
+}
+
+h4 {
+  color: white;
+}
+
+label {
+  color: #fff;
 }
 
 .frase {
@@ -231,7 +226,7 @@ body {
   background-color: #151320;
   height: 100vh;
   display: grid;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .cards {
@@ -280,6 +275,18 @@ img {
 
 .card3 > .container:after {
   background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
+
+.card4 > .container:after {
+  background-image: linear-gradient(135deg, #746a5a, #209a2d);
+}
+
+.card5 > .container:after {
+  background-image: linear-gradient(135deg, #c32997, #beb64a);
+}
+
+.card6 > .container:after {
+  background-image: linear-gradient(135deg, #587be4, #5e2e20);
 }
 
 .details {
