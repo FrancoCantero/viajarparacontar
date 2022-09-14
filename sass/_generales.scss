@@ -1,27 +1,31 @@
-
 body {
-    background-image: url(../img/fondoPagina.jpg);
-    position: relative;
+    background-color: #151320;
+    display: grid;
+    height: 100vh;
+
+    font-family: 'Poppins'sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
+    
 
 }
 
-h2{
+h2 {
     text-align: center;
     color: #fff;
     margin-bottom: 40px,
 }
 
-
-
-img{
-    max-width: 100%;
+h1{
+    text-align: center;
 }
+
+
 
 .frase {
     border: 0px;
@@ -30,21 +34,14 @@ img{
     text-align: center;
     color: white;
     font-family: 'Play', sans-serif;
-     }
-
- div , iframe{
-        margin: auto;
-     }
-
-
-
-.container{
-    height: 150vh;
 }
 
-@media only screen and(max-width:768px){
-    .container{
-        height: 400vh;
-    }
-    
+div,
+iframe {
+    margin: auto;
 }
+
+
+
+
+
